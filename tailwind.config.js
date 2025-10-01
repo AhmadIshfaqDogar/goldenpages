@@ -1,30 +1,42 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
+      colors: {
+        'dark-primary': '#0a0a0a',
+        'dark-secondary': '#1a1a1a',
+        'gold-primary': '#d4af37',
+        'gold-secondary': '#f7ef8a',
+        'gold-accent': '#ffd700',
+        'text-light': '#ffffff',
+        'text-gray': '#b0b0b0',
+      },
       fontFamily: {
-        'serif': ['Playfair Display', 'serif'],
-        'sans': ['Inter', 'system-ui', 'sans-serif'],
+        'display': ['Playfair Display', 'serif'],
+        'body': ['Inter', 'sans-serif'],
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',
-        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'fade-in': 'fadeIn 1.5s ease-in-out',
+        'glow': 'glow 2s ease-in-out infinite alternate',
+        'slide-in': 'slideIn 0.6s ease-out',
       },
       keyframes: {
         float: {
           '0%, 100%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-20px)' },
         },
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        }
-      }
+        glow: {
+          '0%': { boxShadow: '0 0 20px rgba(212, 175, 55, 0.3)' },
+          '100%': { boxShadow: '0 0 30px rgba(212, 175, 55, 0.6)' },
+        },
+        slideIn: {
+          '0%': { opacity: '0', transform: 'translateY(30px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
     },
   },
   plugins: [],
