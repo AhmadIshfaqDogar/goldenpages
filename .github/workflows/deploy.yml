@@ -4,6 +4,9 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: write   # 👈 required so the bot can push to gh-pages
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -14,7 +17,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20   # 👈 use Node.js 20 (supported by Vite)
+          node-version: 20   # Vite supports Node.js 20
 
       - name: Install dependencies
         run: npm install
