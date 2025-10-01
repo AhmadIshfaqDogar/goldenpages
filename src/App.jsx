@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import AboutBook from './components/AboutBook';
 import Features from './components/Features';
 import Author from './components/Author';
+import BookCarousal from './components/BookCarousal';
 import Testimonials from './components/Testimonials';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
@@ -16,6 +17,7 @@ function App() {
       <AboutBook />
       <Features />
       <Author />
+      <BookCarousal />
       <Testimonials />
       <CTA />
       <Footer />

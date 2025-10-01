@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, Users, BookOpen, Linkedin, Twitter } from 'lucide-react';
+import { Award, Users, BookOpen, Linkedin, Instagram , Facebook } from 'lucide-react';
 
 const Author = () => {
   const stats = [
@@ -47,7 +47,7 @@ const Author = () => {
               >
                 <div className="w-full h-full bg-dark-primary rounded-full overflow-hidden border-4 border-dark-secondary">
                   <div className="w-full h-full bg-gradient-to-br from-gold-primary/20 to-gold-accent/10 flex items-center justify-center">
-                    <div className="text-gold-primary text-6xl font-bold">JA</div>
+                    <div className="text-gold-primary text-6xl font-bold">AI</div>
                   </div>
                 </div>
               </motion.div>
@@ -90,27 +90,27 @@ const Author = () => {
             viewport={{ once: true }}
           >
             <h3 className="text-3xl font-display font-bold mb-6">
-              John Author
+              Ahmad Ishfaq
             </h3>
             <p className="text-text-gray text-lg mb-6">
               With over 15 years of experience in digital transformation and online business development, 
-              John has helped thousands of professionals and entrepreneurs achieve remarkable success in 
+              Ahmad has helped thousands of professionals and entrepreneurs achieve remarkable success in 
               the digital landscape.
             </p>
             <p className="text-text-gray text-lg mb-6">
               His expertise spans across digital marketing, e-commerce strategy, and online business 
-              development. John's previous works have been featured in major publications and have 
+              development. Ahmad's previous works have been featured in major publications and have 
               helped over 50,000 students transform their careers.
             </p>
             <p className="text-text-gray text-lg mb-8">
-              In this comprehensive guide, John shares his proven strategies and insider knowledge to 
+              In this comprehensive guide, Ahmad shares his proven strategies and insider knowledge to 
               help you master the art of digital success.
             </p>
 
             {/* Social Links */}
             <div className="flex gap-4 mb-8">
               <motion.a
-                href="#"
+                href="https://www.linkedin.com/in/ahmad-ishfaq-500517308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 className="w-12 h-12 bg-dark-primary border border-gold-primary/20 rounded-lg flex items-center justify-center text-gold-primary hover:bg-gold-primary hover:text-dark-primary transition-all duration-300"
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
@@ -118,12 +118,20 @@ const Author = () => {
                 <Linkedin className="w-5 h-5" />
               </motion.a>
               <motion.a
-                href="#"
+                href="https://www.facebook.com/share/1A5NgScfKP/"
                 className="w-12 h-12 bg-dark-primary border border-gold-primary/20 rounded-lg flex items-center justify-center text-gold-primary hover:bg-gold-primary hover:text-dark-primary transition-all duration-300"
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Twitter className="w-5 h-5" />
+                <Facebook className="w-5 h-5" />
+              </motion.a>
+               <motion.a
+                href="https://www.instagram.com/ahmadishfaqdogar?igsh=azQycThzYWpncXVw"
+                className="w-12 h-12 bg-dark-primary border border-gold-primary/20 rounded-lg flex items-center justify-center text-gold-primary hover:bg-gold-primary hover:text-dark-primary transition-all duration-300"
+                whileHover={{ scale: 1.1, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Instagram className="w-5 h-5" />
               </motion.a>
             </div>
 
@@ -135,7 +143,7 @@ const Author = () => {
               transition={{ delay: 0.6 }}
               viewport={{ once: true }}
             >
-              John Author
+              Ahmad Ishfaq
             </motion.div>
           </motion.div>
         </div>

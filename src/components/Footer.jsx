@@ -1,15 +1,24 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { BookOpen, Mail, MapPin, Phone, Twitter, Linkedin, Instagram } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  BookOpen,
+  Mail,
+  MapPin,
+  Phone,
+  
+  Linkedin,
+  Facebook,
+  Instagram,
+} from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
-    'Product': ['Features', 'Pricing', 'Testimonials', 'FAQ'],
-    'Company': ['About', 'Blog', 'Careers', 'Press'],
-    'Support': ['Help Center', 'Contact', 'Privacy', 'Terms'],
-    'Resources': ['Ebooks', 'Tutorials', 'Webinars', 'Community']
+    Product: ["Features", "Pricing", "Testimonials", "FAQ"],
+    Company: ["About", "Blog", "Careers", "Press"],
+    Support: ["Help Center", "Contact", "Privacy", "Terms"],
+    Resources: ["Ebooks", "Tutorials", "Webinars", "Community"],
   };
 
   return (
@@ -29,22 +38,23 @@ const Footer = () => {
               <span>GoldenPages</span>
             </div>
             <p className="text-text-gray mb-6 leading-relaxed">
-              Empowering professionals with cutting-edge digital knowledge and strategies for unprecedented success.
+              Empowering professionals with cutting-edge digital knowledge and
+              strategies for unprecedented success.
             </p>
-            
+
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-text-gray">
                 <Mail className="w-4 h-4 text-gold-primary" />
-                <span>contact@goldenpages.com</span>
+                <span>ahmadishfaqdogar@gmail.com</span>
               </div>
               <div className="flex items-center gap-3 text-text-gray">
                 <Phone className="w-4 h-4 text-gold-primary" />
-                <span>+1 (555) 123-4567</span>
+                <span>+92 (329) 476 3078</span>
               </div>
               <div className="flex items-center gap-3 text-text-gray">
                 <MapPin className="w-4 h-4 text-gold-primary" />
-                <span>New York, NY</span>
+                <span>Pakistan</span>
               </div>
             </div>
           </motion.div>
@@ -58,7 +68,9 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: columnIndex * 0.1 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-lg font-semibold text-text-light mb-6">{category}</h3>
+              <h3 className="text-lg font-semibold text-text-light mb-6">
+                {category}
+              </h3>
               <ul className="space-y-3">
                 {links.map((link, linkIndex) => (
                   <motion.li key={link}>
@@ -89,7 +101,8 @@ const Footer = () => {
                 Stay Updated
               </h3>
               <p className="text-text-gray">
-                Get the latest insights, tips, and exclusive offers delivered to your inbox.
+                Get the latest insights, tips, and exclusive offers delivered to
+                your inbox.
               </p>
             </div>
             <motion.div
@@ -99,18 +112,20 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.5 }}
               viewport={{ once: true }}
             >
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 bg-dark-primary border border-gold-primary/20 rounded-lg px-4 py-3 text-text-light placeholder-text-gray focus:outline-none focus:border-gold-primary transition-colors duration-300"
-              />
-              <motion.button
-                className="bg-gold-primary text-dark-primary px-6 py-3 rounded-lg font-semibold hover:bg-gold-accent transition-colors duration-300"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Subscribe
-              </motion.button>
+              <div className="flex flex-col sm:flex-row gap-3 w-full">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="flex-1 w-full bg-dark-primary border border-gold-primary/20 rounded-lg px-4 py-3 text-text-light placeholder-text-gray focus:outline-none focus:border-gold-primary transition-colors duration-300"
+                />
+                <motion.button
+                  className="w-full sm:w-auto bg-gold-primary text-dark-primary px-6 py-3 rounded-lg font-semibold hover:bg-gold-accent transition-colors duration-300"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  Subscribe
+                </motion.button>
+              </div>
             </motion.div>
           </div>
         </motion.div>
@@ -140,9 +155,9 @@ const Footer = () => {
               viewport={{ once: true }}
             >
               {[
-                { icon: Twitter, href: '#' },
-                { icon: Linkedin, href: '#' },
-                { icon: Instagram, href: '#' },
+                { icon: Facebook, href: "https://www.facebook.com/share/1A5NgScfKP/" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/ahmad-ishfaq-500517308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+                { icon: Instagram, href: "https://www.facebook.com/share/1A5NgScfKP/" },
               ].map((social, index) => (
                 <motion.a
                   key={social.icon.name}
@@ -164,13 +179,22 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <a href="#" className="text-text-gray hover:text-gold-primary transition-colors duration-300">
+              <a
+                href="#"
+                className="text-text-gray hover:text-gold-primary transition-colors duration-300"
+              >
                 Privacy Policy
               </a>
-              <a href="#" className="text-text-gray hover:text-gold-primary transition-colors duration-300">
+              <a
+                href="#"
+                className="text-text-gray hover:text-gold-primary transition-colors duration-300"
+              >
                 Terms of Service
               </a>
-              <a href="#" className="text-text-gray hover:text-gold-primary transition-colors duration-300">
+              <a
+                href="#"
+                className="text-text-gray hover:text-gold-primary transition-colors duration-300"
+              >
                 Cookies
               </a>
             </motion.div>

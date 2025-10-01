@@ -118,7 +118,7 @@ const Hero = () => {
                     <p className="text-text-gray text-sm">The Complete Guide to Success</p>
                   </div>
                   <div className="text-right">
-                    <p className="text-gold-primary text-sm">By John Author</p>
+                    <p className="text-gold-primary text-sm">By Ahmad Ishfaq</p>
                   </div>
                 </div>
               </div>
