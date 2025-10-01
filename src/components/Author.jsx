@@ -4,7 +4,7 @@ import { Award, Users, BookOpen, Linkedin, Instagram , Facebook } from 'lucide-r
 
 const Author = () => {
   const stats = [
-    { icon: Award, number: '15+', label: 'Years Experience' },
+    { icon: Award, number: '3+', label: 'Years Experience' },
     { icon: Users, number: '50K+', label: 'Students Taught' },
     { icon: BookOpen, number: '12', label: 'Published Books' }
   ];
@@ -93,7 +93,7 @@ const Author = () => {
               Ahmad Ishfaq
             </h3>
             <p className="text-text-gray text-lg mb-6">
-              With over 15 years of experience in digital transformation and online business development, 
+              With over 3 years of experience in digital transformation and online business development, 
               Ahmad has helped thousands of professionals and entrepreneurs achieve remarkable success in 
               the digital landscape.
             </p>
