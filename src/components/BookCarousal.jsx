@@ -58,7 +58,7 @@ const BookCarousel = () => {
   // Calculate positions for zig-zag pattern
   const getBookPosition = (index) => {
     const position = (index - currentIndex + bookImages.length) % bookImages.length;
-    
+    //comment
     switch (position) {
       case 0: // Center
         return {
