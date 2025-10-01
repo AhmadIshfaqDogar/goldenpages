@@ -1,19 +1,30 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Award, Users, BookOpen, Linkedin, Instagram , Facebook } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  Award,
+  Users,
+  BookOpen,
+  Linkedin,
+  Instagram,
+  Facebook,
+} from "lucide-react";
+import profileImg from "../assets/profile.jpeg";
 
 const Author = () => {
   const stats = [
-    { icon: Award, number: '3+', label: 'Years Experience' },
-    { icon: Users, number: '50K+', label: 'Students Taught' },
-    { icon: BookOpen, number: '12', label: 'Published Books' }
+    { icon: Award, number: "3+", label: "Years Experience" },
+    { icon: Users, number: "50K+", label: "Students Taught" },
+    { icon: BookOpen, number: "12", label: "Published Books" },
   ];
 
   return (
-    <section id="author" className="py-20 bg-dark-secondary relative overflow-hidden">
+    <section
+      id="author"
+      className="py-20 bg-dark-secondary relative overflow-hidden"
+    >
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-gold-primary/5 rounded-full blur-3xl"></div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           className="text-center mb-16"
@@ -43,15 +54,22 @@ const Author = () => {
               <motion.div
                 className="w-80 h-80 mx-auto bg-gradient-to-br from-gold-primary to-gold-accent rounded-full p-1"
                 whileHover={{ scale: 1.05 }}
-                transition={{ type: 'spring', stiffness: 300 }}
+                transition={{ type: "spring", stiffness: 300 }}
               >
-                <div className="w-full h-full bg-dark-primary rounded-full overflow-hidden border-4 border-dark-secondary">
+                <div className="w-full h-full bg-dark-primary rounded-full overflow-hidden border-4 border-dark-secondary  transform transition-transform duration-300 hover:scale-110">
+                  <img
+                    src={profileImg}
+                    alt="Profile"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {/* <div className="w-full h-full bg-dark-primary rounded-full overflow-hidden border-4 border-dark-secondary">
                   <div className="w-full h-full bg-gradient-to-br from-gold-primary/20 to-gold-accent/10 flex items-center justify-center">
                     <div className="text-gold-primary text-6xl font-bold">AI</div>
                   </div>
-                </div>
+                </div> */}
               </motion.div>
-              
+
               {/* Floating Badge */}
               <motion.div
                 className="absolute -top-4 -right-4 bg-gold-primary text-dark-primary px-4 py-2 rounded-full font-semibold text-sm"
@@ -75,7 +93,9 @@ const Author = () => {
                   whileHover={{ scale: 1.05 }}
                 >
                   <stat.icon className="w-8 h-8 text-gold-primary mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gold-primary">{stat.number}</div>
+                  <div className="text-2xl font-bold text-gold-primary">
+                    {stat.number}
+                  </div>
                   <div className="text-text-gray text-sm">{stat.label}</div>
                 </motion.div>
               ))}
@@ -93,18 +113,21 @@ const Author = () => {
               Ahmad Ishfaq
             </h3>
             <p className="text-text-gray text-lg mb-6">
-              With over 3 years of experience in digital transformation and online business development, 
-              Ahmad has helped thousands of professionals and entrepreneurs achieve remarkable success in 
-              the digital landscape.
+              With over 3 years of experience in digital transformation and
+              online business development, Ahmad has helped thousands of
+              professionals and entrepreneurs achieve remarkable success in the
+              digital landscape.
             </p>
             <p className="text-text-gray text-lg mb-6">
-              His expertise spans across digital marketing, e-commerce strategy, and online business 
-              development. Ahmad's previous works have been featured in major publications and have 
-              helped over 50,000 students transform their careers.
+              His expertise spans across digital marketing, e-commerce strategy,
+              and online business development. Ahmad's previous works have been
+              featured in major publications and have helped over 50,000
+              students transform their careers.
             </p>
             <p className="text-text-gray text-lg mb-8">
-              In this comprehensive guide, Ahmad shares his proven strategies and insider knowledge to 
-              help you master the art of digital success.
+              In this comprehensive guide, Ahmad shares his proven strategies
+              and insider knowledge to help you master the art of digital
+              success.
             </p>
 
             {/* Social Links */}
@@ -125,7 +148,7 @@ const Author = () => {
               >
                 <Facebook className="w-5 h-5" />
               </motion.a>
-               <motion.a
+              <motion.a
                 href="https://www.instagram.com/ahmadishfaqdogar?igsh=azQycThzYWpncXVw"
                 className="w-12 h-12 bg-dark-primary border border-gold-primary/20 rounded-lg flex items-center justify-center text-gold-primary hover:bg-gold-primary hover:text-dark-primary transition-all duration-300"
                 whileHover={{ scale: 1.1, y: -2 }}

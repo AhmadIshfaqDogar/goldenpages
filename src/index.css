@@ -43,3 +43,40 @@ body {
   backface-visibility: hidden;
   -webkit-font-smoothing: antialiased;
 }
+
+/* Improved mobile scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fix for iOS Safari */
+@supports (-webkit-touch-callout: none) {
+  .mobile-menu-fix {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Ensure proper section spacing for fixed header */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Mobile-specific fixes */
+@media (max-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  section {
+    scroll-margin-top: 70px;
+  }
+}
+
+/* Prevent body scroll when mobile menu is open */
+body.no-scroll {
+  overflow: hidden;
+}
